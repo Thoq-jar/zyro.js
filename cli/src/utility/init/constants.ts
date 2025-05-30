@@ -1,3 +1,6 @@
+const APP_DIR = "app";
+const OUT_DIR = ".cumshot/output";
+
 const HOME_CUM_FILE = `import { Urethra } from 'cumshot-js';
 
 export default function Home() {
@@ -110,5 +113,7 @@ const PREFIX_MAPPINGS = {
 export {
     HOME_CUM_FILE,
     PACKAGE_JSON,
-    PREFIX_MAPPINGS
+    PREFIX_MAPPINGS,
+    APP_DIR,
+    OUT_DIR,
 }
