@@ -7,10 +7,18 @@ export default function Home() {
         Urethra.push(url)
     }
 
+    /*
     const style={{
         backgroundColor = '#000000',
         color = '#ffffff'
     }};
+    babel doesnt like the color = and wants real css syntax this will be fixed once custom parser
+    */
+
+    const style={
+      backgroundColor: '#000000',
+      color: '#ffffff',
+    };
 
     return (
         <>

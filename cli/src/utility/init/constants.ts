@@ -7,9 +7,17 @@ export default function Home() {
         Urethra.push(url)
     }
 
+    /*
     const style={{
         backgroundColor = '#000000',
         color = '#ffffff'
+    }};
+    babel doesnt like the color = and wants real css syntax this will be fixed once custom parser
+    */
+
+    const style = {{
+      backgroundColor: '#000000';
+      color: '#ffffff';
     }};
 
     return (
@@ -36,7 +44,71 @@ const PACKAGE_JSON = `{
   }
 }`;
 
+const PREFIX_MAPPINGS = {
+  "!click": "onClick",
+  "!dblclick": "onDblClick",
+  "!mousedown": "onMouseDown",
+  "!mouseup": "onMouseUp",
+  "!mouseover": "onMouseOver",
+  "!mousemove": "onMouseMove",
+  "!mouseout": "onMouseOut",
+  "!mouseenter": "onMouseEnter",
+  "!mouseleave": "onMouseLeave",
+  "!keydown": "onKeyDown",
+  "!keypress": "onKeyPress",
+  "!keyup": "onKeyUp",
+  "!focus": "onFocus",
+  "!blur": "onBlur",
+  "!change": "onChange",
+  "!input": "onInput",
+  "!submit": "onSubmit",
+  "!reset": "onReset",
+  "!scroll": "onScroll",
+  "!resize": "onResize",
+  "!select": "onSelect",
+  "!contextmenu": "onContextMenu",
+  "!load": "onLoad",
+  "!unload": "onUnload",
+  "!error": "onError",
+  "!abort": "onAbort",
+  "!drag": "onDrag",
+  "!dragstart": "onDragStart",
+  "!dragend": "onDragEnd",
+  "!dragenter": "onDragEnter",
+  "!dragleave": "onDragLeave",
+  "!dragover": "onDragOver",
+  "!drop": "onDrop",
+  "!touchstart": "onTouchStart",
+  "!touchmove": "onTouchMove",
+  "!touchend": "onTouchEnd",
+  "!touchcancel": "onTouchCancel",
+  "!wheel": "onWheel",
+  "!copy": "onCopy",
+  "!cut": "onCut",
+  "!paste": "onPaste",
+  "!animationstart": "onAnimationStart",
+  "!animationend": "onAnimationEnd",
+  "!animationiteration": "onAnimationIteration",
+  "!transitionend": "onTransitionEnd",
+  "!pointerdown": "onPointerDown",
+  "!pointerup": "onPointerUp",
+  "!pointermove": "onPointerMove",
+  "!pointerover": "onPointerOver",
+  "!pointerout": "onPointerOut",
+  "!pointerenter": "onPointerEnter",
+  "!pointerleave": "onPointerLeave",
+  "!gotpointercapture": "onGotPointerCapture",
+  "!lostpointercapture": "onLostPointerCapture",
+  "!beforeunload": "onBeforeUnload",
+  "!hashchange": "onHashChange",
+  "!popstate": "onPopState",
+  "!storage": "onStorage",
+  "!value": "value"
+};
+
+
 export {
     HOME_CUM_FILE,
-    PACKAGE_JSON
+    PACKAGE_JSON,
+    PREFIX_MAPPINGS
 }
