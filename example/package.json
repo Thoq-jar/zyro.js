@@ -1,0 +1,11 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "tip dev"
+  },
+  "dependencies": {
+    "cumshot-js": "file:../cumshot-js"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "keywords": ["tip", "cumshot", "js", "cli"],
+  "author": "Thoq + slqnt",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "build": "tsc",
+    "dev": "npm run build && npm start"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.5",
+    "@types/node": "^20.12.12"
+  }
+}
