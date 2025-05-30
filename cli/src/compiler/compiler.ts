@@ -41,7 +41,18 @@ export default function compile(source: string) {
             }
         },
         JSXElement(path) {
-            
+            const opening = path.node.openingElement
+            const tagName = opening.name.name
+
+            let baseTag = `<${tagName}`
+
+            for (const attr of opening.attributes) {
+                if (t.isJSXAttribute(attr) && t.isJSXIdentifier(attr.name)) {
+                    const attrName = attr.name.name;
+                    const attrValue = attr.value;
+                    
+                }
+            }
         }
     })
 
