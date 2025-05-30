@@ -1,0 +1,12 @@
+{
+  "name": "awesome-project",
+  "version": "1.0.0",
+  "description": "provice a description",
+  "author": "you",
+  "scripts": {
+    "dev": "tip dev"
+  },
+  "dependencies": {
+    "cumshot-js": "file:../cumshot-js"
+  }
+}
