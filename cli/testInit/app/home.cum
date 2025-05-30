@@ -7,10 +7,6 @@ export default function Home() {
         Flux.push(url)
     }
 
-    const style={{
-      backgroundColor: '#000000';
-      color: '#ffffff';
-    }};
 
     return (
         <>

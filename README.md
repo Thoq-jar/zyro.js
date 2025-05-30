@@ -2,6 +2,8 @@
 
 ![Zyro Banner](./branding/banner/ZyroBanner@640x360.png)
 
+> **UNDER DEVELOPMENT - THIS WILL NOT WORK**
+
 ### Zyro is a fast, compiled, React-like JavaScript framework for building web applications.
 
 Paired with Zyxi, the [cli](cli/), it has fast build times and fast runtime performance.
@@ -11,9 +13,9 @@ Paired with Zyxi, the [cli](cli/), it has fast build times and fast runtime perf
 
 
 ## License
-© 2025 Thoq
+© 2025 [Thoq](https://github.com/Thoq-jar)
 
-© 2025 slqnt
+© 2025 [slqnt](https://github.com/slqntdevs)
 
 This project uses the [MIT License](https://opensource.org/license/mit)
 for more info, visit the [LICENSE](LICENSE.md) file.

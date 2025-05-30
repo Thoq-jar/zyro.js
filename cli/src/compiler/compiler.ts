@@ -9,6 +9,7 @@ function preprocess(source: string): string {
         const regex = new RegExp(`${prefix}=`, "g");
         source = source.replace(regex, `${event}=`);
     }
+
     source = source.replace(/style=\{\{([^}]+)\}\}/g, (_, inner) => {
         const processed = inner
             .split(',')
@@ -89,6 +90,9 @@ export default function compile(source: string) {
         console.error("Parsing failed");
         return;
     }
+
+    let body = "";
+    let html = "";
 
     traverse(ast, {
         JSXAttribute(path) {

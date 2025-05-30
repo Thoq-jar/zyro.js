@@ -3,7 +3,6 @@
   packages = [
     pkgs.nodejs_20
   ];
-  env = {};
   idx = {
     extensions = [];
     workspace = {

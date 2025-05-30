@@ -57,7 +57,7 @@ export default async function buildProject(devMode: boolean) {
     if (errorPageEntries.length === 0) {
         logger.info("No error pages defined in ERROR_PAGES.");
     } else {
-        for (let i = 0; i < errorPageEntries.length; i++) {
+        for(let i = 0; i < errorPageEntries.length; i++) {
             const [code, message] = errorPageEntries[i];
             logger.enter().setLast(i === errorPageEntries.length - 1); 
             const numericCode = parseInt(code);
@@ -73,7 +73,7 @@ export default async function buildProject(devMode: boolean) {
                 }
                 writeFileSync(outputPath, errorHtml);
                 logger.success(`Built ${numericCode}.html`);
-            } catch (e: any) {
+            } catch(e: any) {
                 logger.error(`Failed to build error page ${numericCode}.html: ${e.message}`);
             }
 
@@ -100,7 +100,7 @@ export default async function buildProject(devMode: boolean) {
                 let outputPath: string;
                 const baseOutputDir = path.resolve(__dirname, relativePath, OUT_DIR);
 
-                if (file.endsWith("app/home.cum") || file === "app/home.cum") { 
+                if(file.endsWith("app/home.cum") || file === "app/home.cum") { 
                     outputPath = path.join(baseOutputDir, "index.html");
                 } else {
                     const fileDirRelative = path.dirname(file.substring("app/".length));
@@ -110,17 +110,17 @@ export default async function buildProject(devMode: boolean) {
                 }
 
                 const outputDirForFile = path.dirname(outputPath);
-                if (!fs.existsSync(outputDirForFile)) {
+                if(!fs.existsSync(outputDirForFile)) {
                     fs.mkdirSync(outputDirForFile, { recursive: true });
                     logger.info(`Created directory: ${outputDirForFile}`);
                 }
 
                 writeFileSync(outputPath, compiled);
                 logger.success(`Compiled ${path.basename(file)} to ${path.relative(baseOutputDir, outputPath) || path.basename(outputPath)}`);
-            } catch (err) {
+            } catch(err) {
                 if(err instanceof Error) {
                     logger.error(`Failed to process or compile ${file}: ${err.message}`);
-                    console.error(`Stacktrace: ${err.stack}`);
+                    if(devMode) console.error(`Stacktrace: ${err.stack}`);
                     exit(1);
                 } else {
                     logger.error(err);
