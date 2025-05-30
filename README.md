@@ -12,6 +12,7 @@ Paired with Zyxi, the [cli](cli/), it has fast build times and fast runtime perf
 
 ## License
 © 2025 Thoq
+
 © 2025 slqnt
 
 This project uses the [MIT License](https://opensource.org/license/mit)
