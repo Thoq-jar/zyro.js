@@ -1,10 +1,10 @@
-import { Urethra } from 'cumshot-js';
+import { Flux } from 'zyro-js';
 
 export default function Home() {
     let count = 0;
 
     function viewPortfolio(url) {
-        Urethra.push(url)
+        Flux.push(url)
     }
 
     const style={{

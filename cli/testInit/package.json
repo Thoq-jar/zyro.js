@@ -1,12 +1,12 @@
 {
   "name": "awesome-project",
   "version": "1.0.0",
-  "description": "provice a description",
+  "description": "my awesome new project",
   "author": "you",
   "scripts": {
-    "dev": "tip dev"
+    "dev": "zyxi dev"
   },
   "dependencies": {
-    "cumshot-js": "file:../cumshot-js"
+    "zyro-js": "file:../zyro-js"
   }
 }

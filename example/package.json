@@ -6,6 +6,6 @@
     "dev": "tip dev"
   },
   "dependencies": {
-    "cumshot-js": "file:../cumshot-js"
+    "zyro-js": "file:../zyro-js"
   }
 }

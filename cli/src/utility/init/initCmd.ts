@@ -1,4 +1,4 @@
-import { HOME_CUM_FILE, PACKAGE_JSON } from "./constants";
+import { HOME_CUM_FILE, PACKAGE_JSON } from "../constants";
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { execSync } from "node:child_process";
 

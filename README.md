@@ -1,6 +1,14 @@
-# cumshot.js
+# ![Zyro Logo](./branding/icon/Zyro@16x16.png) zyro.js
 
-stuff here
+![Zyro Banner](./branding/banner/ZyroBanner@640x360.png)
+
+### Zyro is a fast, compiled, React-like JavaScript framework for building web applications.
+
+Paired with Zyxi, the [cli](cli/), it has fast build times and fast runtime performance.
+
+## This is kinda a meme
+[There are too many JavaScipt frameworks](https://dayssincelastjavascriptframework.com/)
+
 
 ## License
 © 2025 Thoq
